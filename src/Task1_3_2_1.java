@@ -12,7 +12,7 @@ public class Task1_3_2_1 {
 
         int max = findMax(x, y);
 
-        int maximum = printMax(max);
+        printMax(max);
     }
 
     static int findMax(int a, int b) {

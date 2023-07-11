@@ -12,7 +12,7 @@ public class Task1_3_2_2 {
 
         double max = findMax(x, y);
 
-        double maximum = printMax(max);
+        printMax(max);
     }
 
     static double  findMax(double a, double b) {
@@ -26,7 +26,7 @@ public class Task1_3_2_2 {
     }
 
     static double printMax(double max) {
-        System.out.println("Наибольшее число: " + max);
+        System.out.println("Наибольшее дробное число: " + max);
         return max;
     }
 }
