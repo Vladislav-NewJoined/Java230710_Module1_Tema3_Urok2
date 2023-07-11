@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Task1_3_2_4 {
     public static void main(String[] args) {
-        System.out.println("Задание : \n3.\tНапишите метод, который возвращает самую длинную из четырех строк" +
+        System.out.println("Задание : \n4.\tНапишите метод, который возвращает самую длинную из четырех строк" +
                 "\n\nРешение: ");
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите первую строку: ");
