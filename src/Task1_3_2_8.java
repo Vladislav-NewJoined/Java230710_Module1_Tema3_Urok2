@@ -14,7 +14,7 @@ public class Task1_3_2_8 {
 //  Создаем класс B, и в нём метод getMaxSumArray
 class B {
     public String getMaxSumArray() {
-        System.out.println("Объявляем и инициализируем три массива целых чисел: a, b, c.");
+        System.out.println("Объявляем и инициализируем в методе getMaxSumArray три массива целых чисел: a, b, c.");
 
         int a1 = 0;
         int a2 = 1;
