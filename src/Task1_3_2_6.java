@@ -6,10 +6,10 @@ public class Task1_3_2_6 {
                 "делая ее ЗаБоРчИкОм\n\nРешение: ");
 
         getConvertedString();
-        System.out.println(); //  перенос строки
+        System.out.println();
     }
 
-    static void getConvertedString() {  //  Создаем метод для преобразования строки
+    static void getConvertedString() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите строку (например 'Структура фвйлов'): ");
         String inputStr = scanner.nextLine();
