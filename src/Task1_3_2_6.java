@@ -1,35 +1,31 @@
-import java.util.Arrays;
+import java.util.Scanner;
 
-class Task1_3_2_6 {
+public class Task1_3_2_6 {
+    public static void main(String[] args) {
+        System.out.println("Задание: \n6.  Напишите метод, который возвращает входящую строку, " +
+                "делая ее ЗаБоРчИкОм\n\nРешение: ");
 
-    // Метод для поиска наибольшего элемента массива.
-    static int largest() {
-        int v1 = 12;
-        int v2 = 75;
-        int v3 = -7;
-        int v4 = 12405;
-        int v5 = 980;
-
-        int arr[] = {v1, v2, v3, v4, v5};  // Или так можно: int[] arr = new int[] { v1, v2, v3, v4, v5 };
-        System.out.println("Задаем массив arr[], используя метод largest: " + Arrays.toString(arr));
-
-        int i;
-
-        // Объявляем переменную для максимального элемента: max.
-        int max = arr[0];
-
-        // Перебираем элементы массива и сравниваем каждый элемент с текущим максимумом.
-        for (i = 1; i < arr.length; i++)
-            if (arr[i] > max)
-                max = arr[i];
-
-        return max;
+        getConvertedString();
+        System.out.println(); //  перенос строки
     }
 
-    public static void main(String[] args) {
-        System.out.println("Задание: \n6.  Напишите метод, который возвращает входящую строку, делая ее " +
-                "ЗаБоРчИкОм\n\nРешение: ");
-
-        System.out.println("наибольший элемент массива: " + largest());
+    static void getConvertedString() {  //  Создаем метод для преобразования строки
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите строку (например 'Структура фвйлов'): ");
+        String inputStr = scanner.nextLine();
+        char chars[] = inputStr.toCharArray();
+        int size = chars.length;
+        for (int i = 0; i < size; i++) {
+            if (i % 2 == 0) {
+                chars[i] = Character.toUpperCase(chars[i]);
+            } else {
+                chars[i] = Character.toLowerCase(chars[i]);
+            }
+        }
+        System.out.print("Преобразованная строка: ");
+        for (int i = 0; i < size; i++) {
+            System.out.print(chars[i]);
+        }
+        return;
     }
 }
